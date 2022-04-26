@@ -1,0 +1,215 @@
+/* Colours */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #F1F2F3;
+}
+
+header {
+  color: #000000;
+}
+@media only screen and (max-width: 500px) {
+  header {
+    display: none;
+  }
+}
+
+.JSCalculator__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.JSCalculator__results {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50vw;
+  height: 20vh;
+  background-color: #000000;
+  color: #FFFFF6;
+  margin: 0px 0px;
+  border-radius: 10px;
+  font-size: 100px;
+}
+@media only screen and (max-width: 500px) {
+  .JSCalculator__results {
+    width: 100vw;
+    font-size: 75px;
+  }
+}
+.JSCalculator__results #display {
+  background-color: #000000;
+  color: #FFFFF6;
+  width: 50vw;
+  text-align: end;
+}
+@media only screen and (max-width: 500px) {
+  .JSCalculator__results #display {
+    width: 100vw;
+  }
+}
+
+.JSCalculator__buttonsGrid {
+  height: 75vh;
+  width: 50vw;
+  border-radius: 10px;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1%;
+  grid-template-areas: "ac ac ac fnDivide" "seven eight nine fnMultiply" "four five six fnSubtract" "one two three fnAdd" "zero zero dec equals";
+}
+@media only screen and (max-width: 500px) {
+  .JSCalculator__buttonsGrid {
+    width: 100vw;
+    height: 80vh;
+  }
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #display {
+  grid-area: display;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #ac {
+  grid-area: ac;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #fnDivide {
+  grid-area: fnDivide;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #seven {
+  grid-area: seven;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #eight {
+  grid-area: eight;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #nine {
+  grid-area: nine;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #fnMultiply {
+  grid-area: fnMultiply;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #four {
+  grid-area: four;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #five {
+  grid-area: five;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #six {
+  grid-area: six;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #fnSubtract {
+  grid-area: fnSubtract;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #one {
+  grid-area: one;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #two {
+  grid-area: two;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #three {
+  grid-area: three;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #fnAdd {
+  grid-area: fnAdd;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #zero {
+  grid-area: zero;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #dec {
+  grid-area: dec;
+}
+
+.JSCalculator,
+.JSCalculator__container,
+.JSCalculator__results,
+.JSCalculator__buttonsGrid #equals {
+  grid-area: equals;
+}
+
+.JSCalculator__sum, .JSCalculator__fnBtn {
+  background-color: #FE9F0A;
+  color: #FFFFF6;
+}
+.JSCalculator__numberBtn, .JSCalculator__decimal {
+  background-color: #333333;
+  color: #FFFFF6;
+}
+.JSCalculator__ac {
+  background-color: #F1F2F3;
+  color: #000000;
+}
