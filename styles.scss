@@ -75,7 +75,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 1%;
-  grid-template-areas: "ac ac ac fnDivide""seven eight nine fnMultiply""four five six fnSubtract""one two three fnAdd""zero zero dec equals";
+  grid-template-areas: "ac ac ac fnDivide" "seven eight nine fnMultiply" "four five six fnSubtract" "one two three fnAdd" "zero zero dec equals";
 
   @media only screen and (max-width: 500px) {
     width: 100vw;
