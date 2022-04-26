@@ -8,12 +8,12 @@
   background-color: $screenBackGroundColor;
 }
 
-header{
+header {
   color: $screenColor;
 
   @media only screen and (max-width: 500px) {
     display: none;
-}
+  }
 }
 
 .JSCalculator__container {
@@ -50,19 +50,19 @@ button {
   @media only screen and (max-width: 500px) {
     width: 100vw;
     font-size: 75px;
-}
+  }
 
-#display{
-  background-color: $backgroundColor;
-  color: $lightText;
-  width: 50vw;
-  text-align: end;
+  #display {
+    background-color: $backgroundColor;
+    color: $lightText;
+    width: 50vw;
+    text-align: end;
 
-  @media only screen and (max-width: 500px) {
-    width: 100vw;
-}
+    @media only screen and (max-width: 500px) {
+      width: 100vw;
+    }
 
-}
+  }
 
 }
 
@@ -75,13 +75,13 @@ button {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 1%;
-  grid-template-areas: "ac ac ac fnDivide" "seven eight nine fnMultiply" "four five six fnSubtract" "one two three fnAdd" "zero zero dec equals";
+  grid-template-areas: "ac ac ac fnDivide""seven eight nine fnMultiply""four five six fnSubtract""one two three fnAdd""zero zero dec equals";
 
   @media only screen and (max-width: 500px) {
     width: 100vw;
     height: 80vh;
 
-}
+  }
 
 
 
@@ -223,20 +223,23 @@ button {
 }
 
 
-.JSCalculator{
-  &__sum, &__fnBtn{
+.JSCalculator {
+
+  &__sum,
+  &__fnBtn {
     background-color: $fnButtonColor;
-    color:$lightText;
+    color: $lightText;
   }
 
-  &__numberBtn, &__decimal{
+  &__numberBtn,
+  &__decimal {
     background-color: $numButtonColor;
-    color:$lightText;
+    color: $lightText;
   }
 
-  &__ac{
+  &__ac {
     background-color: $screenBackGroundColor;
-    color:$darkText;
+    color: $darkText;
   }
 
 }
