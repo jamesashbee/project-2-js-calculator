@@ -84,7 +84,18 @@ const sumTheNumbers = () => {
           parseFloat(storedNumber) / parseFloat(calculatorOutput.innerHTML);
         break;
     }
+
+    // round up if more than 8 chars long like calculator
+    let sumResLen = String(sumResults).length;
+    
+    if(sumResLen >8){
+      calculatorOutput.innerHTML = parseFloat(String(sumResults).substring(0, 8));
+    }
+
+    else{
     calculatorOutput.innerHTML = sumResults;
+  }
+
 
     // reset for next loop of fn
     resetAll();
@@ -122,7 +133,9 @@ fnBtns.forEach((fnBtn) => {
 // when = equals key pressed, sum current and storedNumber if storedNumber is not 0
 equalsBtn.addEventListener("click", sumTheNumbers);
 
-/// To fix in v2
-// 1) if second fn gets pressed before equals
+// fixed in v2
 // 2)If over say 10 chars long the result, round to 10 and align left
+
+/// To fix in v3
+// 1) if second fn gets pressed before equals
 // 3)Display on page last number and last fn pressed
