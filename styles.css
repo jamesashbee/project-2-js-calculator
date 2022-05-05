@@ -6,11 +6,36 @@
   background-color: #F1F2F3;
 }
 
-header {
+span {
+  color: #FE9F0A;
+}
+
+.JSCalculator {
+  display: flex;
+  flex-direction: row;
   color: #000000;
 }
+.JSCalculator__leftInfo {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
 @media only screen and (max-width: 500px) {
-  header {
+  .JSCalculator__leftInfo {
+    display: none;
+  }
+}
+.JSCalculator__rightInfo {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .JSCalculator__rightInfo {
     display: none;
   }
 }
@@ -59,7 +84,7 @@ button {
 }
 
 .JSCalculator__buttonsGrid {
-  height: 75vh;
+  height: 80vh;
   width: 50vw;
   border-radius: 10px;
   background-color: #000000;

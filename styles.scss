@@ -8,13 +8,46 @@
   background-color: $screenBackGroundColor;
 }
 
-header {
+span{
+color:$fnButtonColor;
+}
+
+.JSCalculator{
+  display: flex;
+  flex-direction: row;
+
   color: $screenColor;
 
-  @media only screen and (max-width: 500px) {
-    display: none;
-  }
+  &__leftInfo{
+width: 25vw;
+
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+text-align: center;
+
+
+@media only screen and (max-width: 500px) {
+  display: none;
 }
+  }
+
+  &__rightInfo{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+
+
+}
+
+
 
 .JSCalculator__container {
   display: flex;
@@ -67,7 +100,7 @@ button {
 }
 
 .JSCalculator__buttonsGrid {
-  height: 75vh;
+  height: 80vh;
   width: 50vw;
   border-radius: 10px;
   background-color: $backgroundColor;
